@@ -1,1 +1,30 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/pirates" method="post">
+   <p><label>pirate name:</label> <input name="pirate[name]" type="text"></p>
+   <p><label>pirate weight:</label> <input name="pirate[weight]" type="text"></p>
+   <p><label>pirate height:</label>  <input name="pirate[height]" type="text"></p>
+   <p><label>ship one name:</label>  <input id="ship_name_1" name="pirate[ships][][name]" type="text"></p>
+   <p><label>ship one type:</label>   <input id="ship_type_1" name="pirate[ships][][type]" type="text"></p>
+   <p><label>ship one booty:</label>  <input id="ship_booty_1" name="pirate[ships][][booty]" type="text"></p>
+
+    <p><label>ship two name:</label>  <input id="ship_name_2" name="pirate[ships][][name]" type="text"></p>
+    <p><label>ship two type:</label><input id="ship_type_2" name="pirate[ships][][type]" type="text"></p>
+    <p><label>ship two booty:</label><input id="ship_booty_2" name="pirate[ships][][booty]" type="text"></p>
+    <p><button type="submit" >Submit</button> </p>
+  </form>
+</body>
+</html>
+
+
+
+
+
+
